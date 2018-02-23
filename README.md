@@ -38,6 +38,7 @@
 - メタプログラミングRuby
 
 # 気になる本
+- プログラマのためのSQL 第4版
 - Effective Ruby
 - Rubyのしくみ(優先度の都合で pending...)
 - すごいHaskellたのしく学ぼう!
