@@ -1,4 +1,5 @@
-# after ポリモーフィズム
+# after
+# ポリモーフィズム
 
 module OfficeWorker
   attr_reader :name
@@ -46,3 +47,5 @@ p tom.salary
 kevin = Engineer.new("Kevin")
 p kevin.name
 p kevin.salary
+
+p kevin.class.ancestors # => [Engineer, OfficeWorker, Object, Kernel, BasicObject]
