@@ -7,6 +7,7 @@ class Hoge
     # 同じクラスのインスタンスからのみ呼び出せるのがprotected
     @value == other.value
   end
+
   protected
 
   def value
