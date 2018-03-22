@@ -34,7 +34,3 @@ b = Marshal.load(Marshal.dump(a))
 b.each(&:upcase!)
 p a
 p b
-
-# Kernel#Array これは実はメソッド。配列にしてくれる
-p Array(nil) #=> []
-p Array("hoge") #=> ["hoge"]
