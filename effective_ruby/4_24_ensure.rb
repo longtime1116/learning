@@ -12,9 +12,15 @@ class Lock
     lock.exclusive_lock!
     p "# after exclusive_lock!"
     p lock.lock_state
-    yield(lock)
+    if block_given?
+      yield(lock)
+    else
+      lock
+    end
   ensure
-    lock.unlock! if lock
+    if block_given?
+      lock.unlock! if lock
+    end
   end
 
   def exclusive_lock!
@@ -30,6 +36,11 @@ class Lock
   end
 end
 
+p "===== do not give block ====="
+lock = Lock.acquire
+p lock.lock_state
+
+p "===== give block ====="
 Lock.acquire do |lock|
   p "# in block(before raise)"
   p lock.lock_state
