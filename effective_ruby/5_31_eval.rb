@@ -33,3 +33,14 @@ w.instance_eval do
 end
 
 p w.singleton_methods(false)
+
+Widget.instance_eval  do
+  def table_name
+    "widgets"
+  end
+end
+
+p Widget.table_name
+p Widget.singleton_methods(false)
+
+
