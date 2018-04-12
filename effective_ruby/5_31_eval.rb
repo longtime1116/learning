@@ -44,3 +44,17 @@ p Widget.table_name
 p Widget.singleton_methods(false)
 
 
+# どのインスタンスでも使えるインスタンスメソッドを定義するには class_eval
+Widget.class_eval do
+  attr_accessor(:name)
+
+  def sold?
+    false
+  end
+end
+
+w = Widget.new("Engine")
+p w.sold?
+p w.public_methods(false)
+
+####################################################################################
