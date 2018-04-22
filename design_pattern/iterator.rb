@@ -29,6 +29,10 @@ class Portfolio
   def add_account(account)
     @accounts << account
   end
+
+  def hoge
+    ObjectSpace.each_object(Numeric) { |n| p "The number is #{n}" }
+  end
 end
 
 account1 = Account.new("Adam", 100)
@@ -46,3 +50,4 @@ portfolio.each(&:output_balance)
 
 p "------sort------"
 p portfolio.sort.each(&:output_balance)
+portfolio.hoge
