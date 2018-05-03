@@ -11,3 +11,12 @@ Hoge.new.call_val
 
 # class や def を使うと、scope を共有できない。
 # このように共有する方法をフラットスコープと呼ぶ
+
+
+class A
+  def initialize
+    @hoge = "instance variable"
+  end
+end
+
+A.new.instance_eval { p @hoge }
