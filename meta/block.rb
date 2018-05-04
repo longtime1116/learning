@@ -23,3 +23,26 @@ end
 
 greet_proc = Proc.new { "Bill" }
 greet(&greet_proc)
+
+# proc と lambda の違い
+## その1: proc は return でもとのスコープから抜けるが、lambda は単にそのブロックから抜けるだけ
+
+p = Proc.new do
+  p "in proc"
+  return "proc done"
+  p "hoge"
+end
+
+begin
+  p.call
+rescue => e
+  # LocalJumpError(top レベルからは戻れないので)
+  p e
+end
+
+l = lambda do
+  p "in lambda"
+  return "lambda done"
+  p "hoge"
+end
+p l.call
