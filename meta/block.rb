@@ -27,7 +27,7 @@ greet(&greet_proc)
 # proc と lambda の違い
 ## その1: proc は return でもとのスコープから抜けるが、lambda は単にそのブロックから抜けるだけ
 
-p = Proc.new do
+p = proc do
   p "in proc"
   return "proc done"
   p "hoge"
@@ -46,3 +46,28 @@ l = lambda do
   p "hoge"
 end
 p l.call
+
+# その2: 引数の制約が lambda のほうが厳しい
+
+p = proc do |x, y|
+  p x
+  p y
+end
+p.call(1, 2, 3)
+
+# lambda だとエラーになる。入力の変数に対して出力が決まった値になる関数としての機能なので
+# この厳格性、procとの違いは直感的にわかりやすいと思う。
+l = lambda do |x, y|
+  p x
+  p y
+end
+begin
+  l.call(1, 2, 3)
+rescue => e
+  p e
+end
+
+
+# proc/lambda と method の違い
+# proc/lambda はクロージャとして機能するため定義されたスコープで評価される。
+# method はオブジェクトのスコープで評価される。
