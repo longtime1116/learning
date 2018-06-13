@@ -1,0 +1,127 @@
+include/ruby/ruby.h
+#define RB_INT2FIX(i) (((VALUE)(i))<<1 | RUBY_FIXNUM_FLAG)
+
+FixnumであるVALUEは常に奇数になる。
+一方Rubyのオブジェクト構造体はmalloc()で確保されるので、 普通は4の倍数アドレスに配置される。
+
+
+
+typedef uintptr_t VALUE;
+typedef uintptr_t ID;
+
+Dは任意の文字列と一対一対応する整数
+メモリ管理が大変になるからこういうことをする
+
+Symbol オブジェクトもハッシュテーブルのキーに使われたりするのでオブジェクト数が多い。
+なので、Fixnum と同じように VALUE に埋め込まれるようになった。
+
+symbol.c の rb_id2sym より、
+symbol.h
+#define STATIC_ID2SYM(id)  (((VALUE)(id)<<RUBY_SPECIAL_SHIFT)|SYMBOL_FLAG)
+
+
+enum ruby_special_consts {
+    RUBY_Qfalse = 0,»---»---/* ...0000 0000 */
+    RUBY_Qtrue  = 2,»---»---/* ...0000 0010 */
+    RUBY_Qnil   = 4,»---»---/* ...0000 0100 */
+
+RUBY_Qfalse が 0 なので C でも偽として使える
+
+#define RB_NIL_P(v) !((VALUE)(v) != RUBY_Qnil)
+_P は predicate で、真偽値を返す。
+NILかどうかを判定している。
+
+#define RB_TEST(v) !(((VALUE)(v) & (VALUE)~RUBY_Qnil) == 0)
+Qnil も偽にするには↑を使う
+
+Qnil の Q は、emacs がそうだったから。
+
+Qundef は undeined で、Rubyレベルには出てこない
+
+
+# メソッドの探索
+
+vm_method.c
+
+ 719 static inline rb_method_entry_t*
+ 720 search_method(VALUE klass, ID id, VALUE *defined_class_ptr)
+ 721 {
+ 722     rb_method_entry_t *me;
+ 723
+ 724     for (me = 0; klass; klass = RCLASS_SUPER(klass)) {
+ 725       RB_DEBUG_COUNTER_INC(mc_search_super);
+ 726       if ((me = lookup_method_table(klass, id)) != 0)
+ 727         break;
+ 728     }
+ 729
+ 730     if (defined_class_ptr)
+ 731 »-*defined_class_ptr = klass;
+ 732     return me;
+ 733 }
+
+
+
+
+variable.c
+
+VALUE
+1319 rb_ivar_set(VALUE obj, ID id, VALUE val)
+1320 {
+1321     struct ivar_update ivup;
+1322     uint32_t i, len;
+1323
+1324     RB_DEBUG_COUNTER_INC(ivar_set_base);
+1325
+1326     rb_check_frozen(obj);
+1327
+1328     switch (BUILTIN_TYPE(obj)) {
+1329       case T_OBJECT:
+1330         ivup.iv_extended = 0;
+1331         ivup.u.iv_index_tbl = iv_index_tbl_make(obj);
+1332         iv_index_tbl_extend(&ivup, id);
+1333         len = ROBJECT_NUMIV(obj);
+1334         if (len <= ivup.index) {
+1335             VALUE *ptr = ROBJECT_IVPTR(obj);
+1336             if (ivup.index < ROBJECT_EMBED_LEN_MAX) {
+1337                 RBASIC(obj)->flags |= ROBJECT_EMBED;
+1338                 ptr = ROBJECT(obj)->as.ary;
+1339                 for (i = 0; i < ROBJECT_EMBED_LEN_MAX; i++) {
+1340                     ptr[i] = Qundef;
+1341                 }
+1342             }
+1343             else {
+1344                 VALUE *newptr;
+1345                 uint32_t newsize = iv_index_tbl_newsize(&ivup);
+1346
+1347                 if (RBASIC(obj)->flags & ROBJECT_EMBED) {
+1348                     newptr = ALLOC_N(VALUE, newsize);
+1349                     MEMCPY(newptr, ptr, VALUE, len);
+1350                     RBASIC(obj)->flags &= ~ROBJECT_EMBED;
+1351                     ROBJECT(obj)->as.heap.ivptr = newptr;
+1352                 }
+1353                 else {
+1354                     REALLOC_N(ROBJECT(obj)->as.heap.ivptr, VALUE, newsize);
+1355                     newptr = ROBJECT(obj)->as.heap.ivptr;
+1356                 }
+1357                 for (; len < newsize; len++)
+1358                     newptr[len] = Qundef;
+1359                 ROBJECT(obj)->as.heap.numiv = newsize;
+1360                 ROBJECT(obj)->as.heap.iv_index_tbl = ivup.u.iv_index_tbl;
+1361             }
+1362         }
+1363         RB_OBJ_WRITE(obj, &ROBJECT_IVPTR(obj)[ivup.index], val);
+1364 »-break;
+1365       case T_CLASS:
+1366       case T_MODULE:
+1367 »-if (!RCLASS_IV_TBL(obj)) RCLASS_IV_TBL(obj) = st_init_numtable();
+1368 »-rb_class_ivar_set(obj, id, val);
+1369         break;
+1370       default:
+1371 »-generic_ivar_set(obj, id, val);
+1372 »-break;
+1373     }
+1374     return val;
+1375 }
+
+
+FL_SET(obj, FL_EXIVAR)はobjのbasic.flagsにフラグFL_EXIVARを 立てるマクロである。basic.flags用のフラグは全てFL_xxxxという 名前になっていて、FL_SET()でフラグを立てられる。その逆のフラグを 落とす操作はFL_UNSET()だ。 またFL_EXIVARのEXIVARとはexternal instance variableの略と思われる。
