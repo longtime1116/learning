@@ -1,0 +1,14 @@
+2076 int
+2077 st_numcmp(st_data_t x, st_data_t y)
+2078 {
+2079     return x != y;
+2080 }
+2081
+2082 st_index_t
+2083 st_numhash(st_data_t n)
+2084 {
+2085     enum {s1 = 11, s2 = 3};
+2086     return (st_index_t)((n>>s1|(n<<s2)) ^ (n>>s2));
+2087 }
+
+↑のように、st_numbash は特殊な操作をするように変わっている
