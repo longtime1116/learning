@@ -1,0 +1,35 @@
+rb_ary_to_s いらなくね？と思った
+
+class.c
+Init_class_hierarchy()
+を見てみると、
+
+ 545 void
+ 546 Init_class_hierarchy(void)
+ 547 {
+ 548     rb_cBasicObject = boot_defclass("BasicObject", 0);
+ 549     rb_cObject = boot_defclass("Object", rb_cBasicObject);
+ 550     rb_gc_register_mark_object(rb_cObject);
+ 551
+ 552     /* resolve class name ASAP for order-independence */
+ 553     rb_class_name(rb_cObject);
+ 554
+ 555     rb_cModule = boot_defclass("Module", rb_cObject);
+ 556     rb_cClass =  boot_defclass("Class",  rb_cModule);
+ 557
+ 558     rb_const_set(rb_cObject, rb_intern_const("BasicObject"), rb_cBasicObject);
+ 559     RBASIC_SET_CLASS(rb_cClass, rb_cClass);
+ 560     RBASIC_SET_CLASS(rb_cModule, rb_cClass);
+ 561     RBASIC_SET_CLASS(rb_cObject, rb_cClass);
+ 562     RBASIC_SET_CLASS(rb_cBasicObject, rb_cClass);
+ 563 }
+
+どうやら、Object/Module/Class に特異クラスをセットするのはやっておらず、直接 superclass として rb_cClass を登録しているように見える
+
+
+irb(main):004:0> Class.singleton_class.superclass
+=> #<Class:Module>
+irb(main):005:0> Class.singleton_class.superclass.superclass
+=> #<Class:Object>
+
+でも存在してるので、どこか別のところでやってるんだろう。。。よくわからん
