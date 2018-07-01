@@ -1,3 +1,5 @@
+st.c
+
 2076 int
 2077 st_numcmp(st_data_t x, st_data_t y)
 2078 {
@@ -12,3 +14,36 @@
 2087 }
 
 ↑のように、st_numbash は特殊な操作をするように変わっている
+
+
+1197 /* Insert (KEY, VALUE, HASH) into table TAB.  The table should not have
+1198    entry with KEY before the insertion.  */
+1199 static inline void
+1200 st_add_direct_with_hash(st_table *tab,
+1201     st_data_t key, st_data_t value, st_hash_t hash)
+1202 {
+1203     st_table_entry *entry;
+1204     st_index_t ind;
+1205     st_index_t bin_ind;
+1206
+1207     rebuild_table_if_necessary(tab);
+}
+
+↑rebuild_table_if_necessary() で必要があればメモリ再確保している
+
+
+
+
+
+
+ここで注目したいのは、検索したnameをコピーしていないことである。rubyの APIでは返り値は常に、free()する必要はない（してはならない）。また引数 を渡した場合は常にコピーして使ってくれる。つまり生成と解放が常にユーザか rubyか、片方で完結するようになっているのだ。
+
+では生成と解放を対応させることができない（渡したら渡しっぱなしになる） 値の場合はどうするかというと、その時はRubyオブジェクトを使うようにする。 まだ話していないが、Rubyのオブジェクトは我々が面倒を見なくとも必要が なくなったときに自動的に解放されるからだ。
+
+
+
+
+
+rb_str_intern に breakpoint を張って、
+"hoge".intern
+を実行する
