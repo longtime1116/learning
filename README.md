@@ -132,3 +132,7 @@ CRuby 読むぞ、という肝が据わってから読みたい。
 2018/6/14、RubyKaigi後CRuby読むぞという気持ちが高まっている。Rubyソースコード完全解説を読み終わったら読みたい。
 2018/7/15、そもそも低レイヤーの知識を体系的に身につけるのが先では？という気持ちが高まったので、Computer Science を学ぶことにした。なのでこれを読むとしたらずっと先になるだろう。
 
+
+# おまけ
+- REST API sample
+https://jsonplaceholder.typicode.com/
