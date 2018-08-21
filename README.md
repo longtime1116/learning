@@ -128,7 +128,7 @@ React/Redux の概念と書き方については、公式のチュートリア�
 
 # pending
 - SCRUM BOOT CAMP THE BOOK
-- Rubyソースコード完全解説 (http://i.loveruby.net/ja/rhg/book/)
+- [Rubyソースコード完全解説](http://i.loveruby.net/ja/rhg/book/)
 - Rubyのしくみ
 
 2018/5/16、半分ほど読み進めたが「今じゃない」感が強かった。
