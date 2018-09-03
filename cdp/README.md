@@ -8,7 +8,8 @@
 ## 基本のパターン
 - [x] Snapshotパターン（データのバックアップ）
   - EBS(Amazon Elastic Block Store) を使って snapshot を取得する。snapshot は S3 に保存される。ちなみに RDS の DB インスタンスは、データベースおよびログのストレージに EBS を使っている。
-- [ ] Stampパターン（サーバの複製）
+- [x] Stampパターン（サーバの複製）
+  - EC2 から AMI(Amazon Machine Images) を作れば、AMI を基に複数の EC2 を作成できる。環境設定済みの仮想サーバを複製できる。
 - [ ] Scale Upパターン（動的なサーバのスペックアップ／ダウン）
 - [ ] Scale Outパターン（サーバ数の動的増減）
 - [ ] Ondemand Diskパターン（動的なディスク容量の増減）
