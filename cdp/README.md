@@ -6,7 +6,8 @@
 
 # デザインパターン
 ## 基本のパターン
-- [ ] Snapshotパターン（データのバックアップ）
+- [x] Snapshotパターン（データのバックアップ）
+  - EBS(Amazon Elastic Block Store) を使って snapshot を取得する。snapshot は S3 に保存される。ちなみに RDS の DB インスタンスは、データベースおよびログのストレージに EBS を使っている。
 - [ ] Stampパターン（サーバの複製）
 - [ ] Scale Upパターン（動的なサーバのスペックアップ／ダウン）
 - [ ] Scale Outパターン（サーバ数の動的増減）
