@@ -167,7 +167,9 @@
   - EC2 に障害が起きたときに、EBS(RDS等) は無事であれば、他の EC2 にその EBS を付け替えることで、早期に復旧できる
   - AWS OpsWorksの提供しているAuto Healing機能を使用すると、実現可能
   - AWS の機能を使わなくても、Nagios、Zabbix、Heartbeatなど監視ソフトを使うと実現可能
-- [ ] Monitoring Integrationパターン（モニタリングツールの一元化）
+- [x] Monitoring Integrationパターン（モニタリングツールの一元化）
+  - 仮想サーバの監視は Zabbix などで直接監視する。
+  - OS/ミドルウエア/アプリケーションなどの監視は、CloudWatch で監視してデータを貯め、それを CloudWatch が外部に提供している API を使って、Zabbix などの監視ツールで監視する。
 - [ ] Weighted Transitionパターン（重みづけラウンドロビンDNSを使った移行）
 - [ ] Log Aggregation パターン(ログの集約)
 - [ ] Ondemand Activationパターン（メンテナンス時の一時的な設定変更）
