@@ -157,7 +157,11 @@
   - そのとき、アプリケーション内でタグ情報に従ってEC2の初期化を行うようにしておく。(設定した EIP を EC2 に割り当てる)
   - すると、Stamp パターン等でスケールさせた EC2 それぞれに対して固有の設定を行うことができる。
   - DI は Directory Index の略？
-- [ ] Stack Deploymentパターン（サーバ群立ち上げのテンプレート化）
+- [x] Stack Deploymentパターン（サーバ群立ち上げのテンプレート化）
+  - CloudFormation を使うと、どんな構成でサーバ群を立ち上げるかを定義し、一気に自動で起動することができる。
+  - CloudFormation は staging/production など環境ごとに設定をすることができる。
+  - infrastracture as a code
+  - CloudFormer といツールを使うと既存システムからテンプレートを作成することができる
 - [ ] Server Swappingパターン（サーバの移行）
 - [ ] Monitoring Integrationパターン（モニタリングツールの一元化）
 - [ ] Weighted Transitionパターン（重みづけラウンドロビンDNSを使った移行）
