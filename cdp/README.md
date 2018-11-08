@@ -163,7 +163,10 @@
   - CloudFormation は staging/production など環境ごとに設定をすることができる。
   - infrastracture as a code
   - CloudFormer といツールを使うと既存システムからテンプレートを作成することができる
-- [ ] Server Swappingパターン（サーバの移行）
+- [x] Server Swappingパターン（サーバの移行）
+  - EC2 に障害が起きたときに、EBS(RDS等) は無事であれば、他の EC2 にその EBS を付け替えることで、早期に復旧できる
+  - AWS OpsWorksの提供しているAuto Healing機能を使用すると、実現可能
+  - AWS の機能を使わなくても、Nagios、Zabbix、Heartbeatなど監視ソフトを使うと実現可能
 - [ ] Monitoring Integrationパターン（モニタリングツールの一元化）
 - [ ] Weighted Transitionパターン（重みづけラウンドロビンDNSを使った移行）
 - [ ] Log Aggregation パターン(ログの集約)
