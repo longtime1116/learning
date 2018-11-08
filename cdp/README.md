@@ -159,6 +159,7 @@
   - DI は Directory Index の略？
 - [x] Stack Deploymentパターン（サーバ群立ち上げのテンプレート化）
   - CloudFormation を使うと、どんな構成でサーバ群を立ち上げるかを定義し、一気に自動で起動することができる。
+  - 破棄も行える
   - CloudFormation は staging/production など環境ごとに設定をすることができる。
   - infrastracture as a code
   - CloudFormer といツールを使うと既存システムからテンプレートを作成することができる
