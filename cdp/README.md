@@ -197,7 +197,9 @@
 - [x] Operational Firewallパターン（機能別アクセス制限）
   - チームや組織ごとにセキュリティグループを分けることで、権限の一括管理ができる。
   - admin/leader/member とか。
-- [ ] Multi Load Balancerパターン（複数ロードバランサの設置）
+- [x] Multi Load Balancerパターン（複数ロードバランサの設置）
+  - 一つのEC2に複数のELBを割り当てる。
+  - マルチデバイス対応でデバイスごとに設定を変える必要がある場合、ELB ごとにセッションやヘルスチェック、HTTPSの設定などを変えておくと対応できる。
 - [ ] WAF Proxyパターン（高価なWeb Application Firewallの効率的な活用）
 - [ ] CloudHubパターン（VPN拠点の設置）
 - [ ] Sorry Pageパターン(バックアップサイトへの自動切り替え)
