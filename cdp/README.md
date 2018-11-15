@@ -194,7 +194,9 @@
 - [x] Functional Firewallパターン（階層的アクセス制限）
   - 機能ごとに割り当てるセキュリティグループを変えることで、仮想的なファイアウォールを別々につけることができる。
   - 例えば web アプリケーションには外部からアクセスできるセキュリティグループをつけて、internal API サーバや RDS に対する外部からのアクセスは遮断する、等。
-- [ ] Operational Firewallパターン（機能別アクセス制限）
+- [x] Operational Firewallパターン（機能別アクセス制限）
+  - チームや組織ごとにセキュリティグループを分けることで、権限の一括管理ができる。
+  - admin/leader/member とか。
 - [ ] Multi Load Balancerパターン（複数ロードバランサの設置）
 - [ ] WAF Proxyパターン（高価なWeb Application Firewallの効率的な活用）
 - [ ] CloudHubパターン（VPN拠点の設置）
