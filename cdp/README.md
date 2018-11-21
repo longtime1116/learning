@@ -204,7 +204,13 @@
   - 時間単位でサーバ数が増減する構成で、それらのサーバに WAF を入れるのは現実的でない。
   - その代わり、その上流(EC2とELBの間)にプロキシサーバを噛ませてそこに WAF をインストールする。
   - WAF を導入するプロキシサーバは、SPOF にならないように複数台用意すると良い。
-- [ ] CloudHubパターン（VPN拠点の設置）
+- [x] CloudHubパターン（VPN拠点の設置）
+  - これは自社でデータセンターとかを持っていて、その拠点間で VPN 接続をしたいときに VPC を使えますよ、という話。
+  - 複数拠点間での VPN 接続を実現する方法として、VPC を作成しそこに VPN ハブとなる Virtual Private Gateway を設定するというものがある。
+  - 各拠点では Customer Gateway を設定し、Virtual Private Gateway と接続するように VPN Connection を設定する。
+  - 各拠点の VPN ルーターを設定し、VPN ハブに接続する。
+  - Virtual Private Gateway とは、VPN 接続の Amazon VPC 側
+  - Customer Gateway とは、顧客側の VPN 接続先
 - [ ] Sorry Pageパターン(バックアップサイトへの自動切り替え)
 - [ ] Self Registrationパターン（自分の情報をデータベースに自動登録）
 - [ ] RDP Proxyパターン（Windowsインスタンスへのセキュアなアクセス）
