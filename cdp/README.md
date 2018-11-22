@@ -219,7 +219,11 @@
   - Route53 で、メインサイトをプライマリのフェイルオーバーリソースセットとして登録し、S3 をセカンダリのフェイルオーバーリソースセットとして登録する。
   - Route53 のヘルスチェック機能を用いて、メインサイトを監視する。
 - [ ] Self Registrationパターン（自分の情報をデータベースに自動登録）
-- [ ] RDP Proxyパターン（Windowsインスタンスへのセキュアなアクセス）
+- [x] RDP Proxyパターン（Windowsインスタンスへのセキュアなアクセス）
+  - ポート番号 3389 は、「Microsoft Terminal Server (RDP) officially registered as Windows Based Terminal (WBT)[62]」
+  - RDP（TCP:3389）を使用できない環境でもWindowsインスタンスに接続したい。
+  - RDゲートウエイの役割をWindowsインスタンス上で構成し、WindowsインスタンスにRDゲートウエイ経由で接続するように、RDPクライアントを設定する。
+  - VPC内のEIPを付与していないインスタンスにもセキュアに接続できる。
 - [ ] Floating Gatewayパターン（クラウド上のネットワーク環境の切り替え）
 - [ ] Shared Serviceパターン(システム共通サービスの共用化)
 - [ ] High Availability NATパターン(冗長化されたNATインスタンス)
