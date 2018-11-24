@@ -226,6 +226,9 @@
   - RDP（TCP:3389）を使用できない環境でもWindowsインスタンスに接続したい。
   - RDゲートウエイの役割をWindowsインスタンス上で構成し、WindowsインスタンスにRDゲートウエイ経由で接続するように、RDPクライアントを設定する。
   - VPC内のEIPを付与していないインスタンスにもセキュアに接続できる。
-- [ ] Floating Gatewayパターン（クラウド上のネットワーク環境の切り替え）
+- [x] Floating Gatewayパターン（クラウド上のネットワーク環境の切り替え）
+  - 開発環境、テスト環境、本番環境などで同じ環境(IP アドレスレンジ等も含めて)を用意したい。
+  - 任意のアドレスレンジの VPC を構築し、Virtual Private Gateway を設定する。
+  - VPC の切り替えが必要になった場合は、Virtual Private Gateway を切り替え先の VPC にアタッチし直す。
 - [ ] Shared Serviceパターン(システム共通サービスの共用化)
 - [ ] High Availability NATパターン(冗長化されたNATインスタンス)
