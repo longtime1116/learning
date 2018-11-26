@@ -118,6 +118,13 @@ React/Redux の概念と書き方については、公式のチュートリア�
   - かなりの良書だった。
   - [まとめた](https://github.com/longtime1116/learning/tree/master/engineering_organization)
 
+### 11月
+- [AWSクラウドデザインパターン](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
+  - メモは[こちら](https://github.com/longtime1116/learning/tree/master/cdp)
+  - AWS のサービスを組み合わせてどのようなことが実現できるのかのおおまかなイメージをつかむことができた。
+  - 読む途中で知らなかった単語やAWSのサービスを学びながら読んだので、ネットワークの基礎知識の復習もできた。
+  - 「EC2 に xxx というミドルウェアを導入することで xxx サーバとして利用し、」みたいなところについては、自分で導入したわけではないので実際に試そうとしたらつまずくところが多そうだなと感じた。
+
 # 読み中のもの
 - すごいHaskellたのしく学ぼう!
 - SOFT SKILLS
@@ -159,6 +166,3 @@ CRuby 読むぞ、という肝が据わってから読みたい。
 
 # おまけ
 - [REST API sample](https://jsonplaceholder.typicode.com/)
-
-- [AWSクラウドデザインパターン](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
-
