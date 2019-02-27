@@ -9,3 +9,20 @@ def sigmoid(x):
 
 def relu(x):
     return np.maximum(0, x)
+
+def identity_function(x):
+    return x
+
+def softmax_simple(x):
+    exp_x = np.exp(x)
+    sum_exp_x = np.sum(exp_x)
+    y = exp_x / sum_exp_x
+    return y
+
+# 順番が変わらないまま、和が1という性質を利用して確率としてみなせる
+def softmax(x):
+    C = np.max(x)
+    exp_x = np.exp(x - C)
+    sum_exp_x = np.sum(exp_x)
+    y = exp_x / sum_exp_x
+    return y
