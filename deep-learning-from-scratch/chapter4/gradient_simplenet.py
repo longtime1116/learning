@@ -6,7 +6,7 @@ sys.path.append(os.pardir)
 import functions
 from dataset.mnist import load_mnist
 
-class simpleNet:
+class SimpleNet:
     def __init__(self):
         self.W = np.random.randn(2, 3)
 
@@ -22,7 +22,7 @@ class simpleNet:
 
 
 
-net= simpleNet()
+net= SimpleNet()
 #print(net.W)
 
 x = np.array([0.6, 0.9])
