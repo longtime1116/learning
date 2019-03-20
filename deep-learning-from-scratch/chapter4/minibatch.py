@@ -8,15 +8,18 @@ from dataset.mnist import load_mnist
 from two_layer_net import TwoLayerNet
 
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
+train_size = x_train.shape[0]
+batch_size = 100
 
 train_loss_list = []
+train_acc_list = []
+test_acc_list = []
+iter_per_epoch = max(train_size / batch_size, 1)
 
 print(x_train.shape) # (60000, 784)
 print(t_train.shape) # (60000, 10)
 
-iters_num = 10000
-train_size = x_train.shape[0]
-batch_size = 100
+iters_num = 10
 learning_rate = 0.1
 
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
@@ -40,4 +43,13 @@ for i in range(iters_num):
     loss = network.loss(x_batch, t_batch)
     train_loss_list.append(loss)
 
-print(train_loss_list) # [0.14, 0.09, 0.11, 0.07, 0.12, 0.1, 0.15, 0.05, 0.03, 0.1]
+    if i % iter_per_epoch == 0:
+        train_acc = network.accuracy(x_train, t_train)
+        test_acc = network.accuracy(x_test, t_test)
+        train_acc_list.append(train_acc)
+        test_acc_list.append(test_acc)
+        print("train acc, test acc | " + str(train_acc) + ", " + str(test_acc))
+
+print(train_loss_list)
+# [6.892930767741939, 6.890870160050752, 6.900140694336979, 6.890067939412875, 6.9024656250330345, 6.893264972168742, 6.893252013787007, 6.9102619043286735, 6.88919653710148, 6.90184599778213]
+
