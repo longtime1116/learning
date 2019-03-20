@@ -45,33 +45,34 @@ class TwoLayerNet:
         return grads
 
 
-net = TwoLayerNet(input_size=784, hidden_size=100, output_size=10)
-net.params['W1'].shape
-net.params['b1'].shape
-net.params['W2'].shape
-net.params['b2'].shape
-
-print("a1")
-x = np.random.rand(100, 784)
-y = net.predict(x)
-print("a2")
-
-
-
-x = np.random.rand(100, 784)
-y = net.predict(x)
-
-print("a3")
-x = np.random.rand(100, 784)
-t = np.random.rand(100, 10)
-
-print("a4")
-
-grads = net.numerical_gradient(x, t)
-print("a5")
-print(grads['W1'].shape) #(784, 100)
-print(grads['b1'].shape) #(100,)
-print(grads['W2'].shape) #(100, 10)
-print(grads['b2'].shape) #(10,)
-
-print("a6")
+# import するので、コメントアウトしている
+# net = TwoLayerNet(input_size=784, hidden_size=100, output_size=10)
+# net.params['W1'].shape
+# net.params['b1'].shape
+# net.params['W2'].shape
+# net.params['b2'].shape
+# 
+# #print("a1")
+# x = np.random.rand(100, 784)
+# y = net.predict(x)
+# #print("a2")
+# 
+# 
+# 
+# x = np.random.rand(100, 784)
+# y = net.predict(x)
+# 
+# #print("a3")
+# x = np.random.rand(100, 784)
+# t = np.random.rand(100, 10)
+# 
+# #print("a4")
+# 
+# grads = net.numerical_gradient(x, t)
+# #print("a5")
+# #print(grads['W1'].shape) #(784, 100)
+# #print(grads['b1'].shape) #(100,)
+# #print(grads['W2'].shape) #(100, 10)
+# #print(grads['b2'].shape) #(10,)
+# 
+# #print("a6")
