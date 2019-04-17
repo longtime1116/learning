@@ -188,6 +188,7 @@ React/Redux の概念と書き方については、公式のチュートリア�
 - 入門 Kubernetes
 - ゼロから学ぶ Deep Learning
 - 実践ドメイン駆動設計
+- プログラミングコンテストチャレンジブック
 
 # 読むべきもの
 
