@@ -79,26 +79,28 @@ class TwoLayerNet:
 
 
 
-# 逆誤差伝播法の勾配確認
-(x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
-network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
-
-x_batch = x_train[:3]
-t_batch = t_train[:3]
-
-grad_numerical = network.numerical_gradient(x_batch, t_batch)
-grad_backprop = network.gradient(x_batch, t_batch)
-
-
-for key in grad_numerical.keys():
-    diff = np.average(np.abs(grad_backprop[key] - grad_numerical[key]))
-    print(key + ":" + str(diff))
-
-
+## 逆誤差伝播法の勾配確認
+#(x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
+#network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
+#
+#x_batch = x_train[:3]
+#t_batch = t_train[:3]
+#
+#grad_numerical = network.numerical_gradient(x_batch, t_batch)
+#grad_backprop = network.gradient(x_batch, t_batch)
+#
+#
+#for key in grad_numerical.keys():
+#    diff = np.average(np.abs(grad_backprop[key] - grad_numerical[key]))
+#    print(key + ":" + str(diff))
+#
+#
 
 # ここからは、学習
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, one_hot_label=True)
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
+# print(x_train.shape) # (60000, 784)
+# print(t_train.shape) # (60000, 10)
 
 iters_num = 10000
 train_size = x_train.shape[0]
@@ -112,12 +114,18 @@ test_acc_list = []
 iter_per_epoch = max(train_size / batch_size, 1)
 
 for i in range(iters_num):
+    # train_size のなかから batch_size 個選ぶ
     batch_mask = np.random.choice(train_size, batch_size)
     x_batch = x_train[batch_mask]
     t_batch = t_train[batch_mask]
 
     # 誤差逆伝播によって勾配を求める
     grad = network.gradient(x_batch, t_batch)
+    # grad は dict で、key はそれぞれ W1/b1/W2/b2 のやつ
+    #print(type(grad)) #=> <class 'dict'>
+    #print(len(grad)) #=> 4
+    #print(type(grad['W2']))
+    #print(grad['W2'])
 
     # 更新
     for key in ('W1', 'b1', 'W2', 'b2'):
