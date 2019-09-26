@@ -195,6 +195,11 @@ React/Redux の概念と書き方については、公式のチュートリア�
 - 入門 Kubernetes
   - [まとめた](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes)
 
+### 9月
+- ティール組織
+  - [まとめた](https://github.com/longtime1116/learning/tree/master/teal)
+
+
 # 読み中のもの
 - 実践ドメイン駆動設計
 - プログラミングコンテストチャレンジブック
@@ -208,7 +213,6 @@ React/Redux の概念と書き方については、公式のチュートリア�
 - CODE COMPLETE
 - エリック・エヴァンスのドメイン駆動設計
 - エンジニアのための理論でわかるデザイン入門
-- ティール組織
 - ハッカーと画家( => その後Lispやりたい )
 
 # 途中まで読んだ上で今はこれ以上は読まなくて良いと判断した本
