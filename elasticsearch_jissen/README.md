@@ -29,3 +29,19 @@
   * Elasticsearch に加えて Kibana, Logstash, Beats などの周辺ソフトウェアも含めた総称
   * Elasticsearch のバージョンは 2.4 => 5.0 とジャンプしている(2016年)が、これはその Elastic Stack でのバージョンの統一をするために行われたもの(このタイミングで Beats が加わった)
 
+  * Kibana
+    * Elasticsearch に格納されたデータを分析する際に、直接クエリを投げてもよいが、Kibana の UI を使うことでいい感じに確認することができる。
+    * Tableau みたいなものか。
+  * Logstash
+    * input -> filter -> output
+    * syslog や twitter とかからデータを取ってきて、Elasticsearch に出力する、みたいなことができる
+  * Beats
+    * メトリクスデータを収集・転送するための軽量データシッパー。
+    * インストールされたサーバにできるだけ負荷を与えないよう、収集したデータを Elasticsearch や Logstash に転送してくれる
+
+
+
+
+# 疑問
+* シャード数変えられないので、12にした理由
+* Kibana 以外の Elastic Stack どうしているのだろうか？Beats必須では？
