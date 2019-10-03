@@ -105,3 +105,35 @@ $ curl -X GET "localhost:9200/sample-index/?pretty"
 }
 ```
 
+あるいは
+
+```bash
+$ curl -X GET "localhost:9200/sample-index/_mapping?pretty"
+{
+  "sample-index" : {
+    "mappings" : {
+      "properties" : {
+        "content" : {
+          "type" : "text"
+        },
+        "created_at" : {
+          "type" : "date"
+        },
+        "price" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}
+```
+
+# 削除
+
+```bash
+$ curl -X DELETE "localhost:9200/sample-index?pretty"
+{
+  "acknowledged" : true
+}
+
+```
