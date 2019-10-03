@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   es01:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.3.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
     container_name: es01
     environment:
       - node.name=es01
@@ -21,7 +21,7 @@ services:
     networks:
       - esnet
   es02:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.3.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.0
     container_name: es02
     environment:
       - node.name=es02
@@ -38,6 +38,14 @@ services:
       - esdata02:/usr/share/elasticsearch/data
     networks:
       - esnet
+  kibana:
+    image: kibana:7.4.0
+    ports:
+      - 5601:5601
+    networks:
+      - esnet
+    environment:
+      ELASTICSEARCH_HOSTS: http://es01:9200
 
 volumes:
   esdata01:

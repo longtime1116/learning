@@ -5,17 +5,15 @@
 
 ```bash
 $ docker pull docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+$ docker pull kibana:7.4.0
 ```
 
-* ↑のリンク先の docker-compose.yml をここにコピーする
-
+* docker-compose.yml を用意する。基本は↑の公式のものを使い、プラスで[こちらのKibanaのページ](https://www.elastic.co/guide/en/kibana/current/docker.html)を参考にして kibana 設定を行う
 * ↓で起動
 
 ```bash
-$ docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.4.0
+$ docker-compose up
 ```
-
-
 
 # 動作確認
 
