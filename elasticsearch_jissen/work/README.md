@@ -43,14 +43,17 @@ $ curl -XGET http://localhost:9200/_cluster/health?pretty
 ```
 
 
-# ドキュメントタイプ作成
-
-* ドキュメントタイプ作成
+# インデックス作成
+* ここでは設定とマッピング定義を同時に行うが、個別に行うことも可能
 
 ```bash
-$cat document_type.sh
-curl -X PUT "localhost:9200/sample-index?pretty" -H 'Content-Type: application/json' -d '
+$ cat create_index.sh
+curl -X PUT "localhost:9200/sample-index" -H "" -H 'Content-Type: application/json' -d '
 {
+  "settings": {
+    "number_of_shards": "3",
+    "number_of_replicas": "2"
+  },
   "mappings": {
     "properties": {
       "price": { "type": "integer" },
@@ -61,18 +64,14 @@ curl -X PUT "localhost:9200/sample-index?pretty" -H 'Content-Type: application/j
 }
 '
 
-$ sh document_type.sh
-{
-  "acknowledged" : true,
-  "shards_acknowledged" : true,
-  "index" : "sample-index"
-}
+$ sh create_index.sh
+{"acknowledged":true,"shards_acknowledged":true,"index":"sample-index"}
 ```
 
 * 確認
 
 ```bash
-$ curl -X GET "localhost:9200/sample-index/?pretty"
+$ curl -X GET "localhost:9200/sample-index?pretty"
 {
   "sample-index" : {
     "aliases" : { },
@@ -91,37 +90,14 @@ $ curl -X GET "localhost:9200/sample-index/?pretty"
     },
     "settings" : {
       "index" : {
-        "creation_date" : "1570103952779",
-        "number_of_shards" : "1",
-        "number_of_replicas" : "1",
-        "uuid" : "jkw-6-33Qhq4crj8D8uDpw",
+        "creation_date" : "1570105082019",
+        "number_of_shards" : "3",
+        "number_of_replicas" : "2",
+        "uuid" : "E4CwFs8QR7ek0bKKO2aieg",
         "version" : {
           "created" : "7040099"
         },
         "provided_name" : "sample-index"
-      }
-    }
-  }
-}
-```
-
-あるいは
-
-```bash
-$ curl -X GET "localhost:9200/sample-index/_mapping?pretty"
-{
-  "sample-index" : {
-    "mappings" : {
-      "properties" : {
-        "content" : {
-          "type" : "text"
-        },
-        "created_at" : {
-          "type" : "date"
-        },
-        "price" : {
-          "type" : "integer"
-        }
       }
     }
   }
