@@ -15,7 +15,7 @@ $ docker pull kibana:7.4.0
 $ docker-compose up
 ```
 
-# 動作確認
+# コンテナが立ち上がっていることを確認
 
 ```bash
 $ curl -XGET http://localhost:9200/_cluster/health?pretty
@@ -42,4 +42,66 @@ $ curl -XGET http://localhost:9200/_cluster/health?pretty
 }
 ```
 
+
+# ドキュメントタイプ作成
+
+* ドキュメントタイプ作成
+
+```bash
+$cat document_type.sh
+curl -X PUT "localhost:9200/sample-index?pretty" -H 'Content-Type: application/json' -d '
+{
+  "mappings": {
+    "properties": {
+      "price": { "type": "integer" },
+      "created_at": { "type": "date" },
+      "content": { "type": "text" }
+    }
+  }
+}
+'
+
+$ sh document_type.sh
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "sample-index"
+}
+```
+
+* 確認
+
+```bash
+$ curl -X GET "localhost:9200/sample-index/?pretty"
+{
+  "sample-index" : {
+    "aliases" : { },
+    "mappings" : {
+      "properties" : {
+        "content" : {
+          "type" : "text"
+        },
+        "created_at" : {
+          "type" : "date"
+        },
+        "price" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "settings" : {
+      "index" : {
+        "creation_date" : "1570103952779",
+        "number_of_shards" : "1",
+        "number_of_replicas" : "1",
+        "uuid" : "jkw-6-33Qhq4crj8D8uDpw",
+        "version" : {
+          "created" : "7040099"
+        },
+        "provided_name" : "sample-index"
+      }
+    }
+  }
+}
+```
 
