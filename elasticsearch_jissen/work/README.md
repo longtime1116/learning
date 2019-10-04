@@ -104,6 +104,25 @@ $ curl -X GET "localhost:9200/sample-index?pretty"
 }
 ```
 
+# ドキュメント追加
+* 詳細はファイル参照
+
+```bash
+$ sh add_documents.sh
+```
+
+# ドキュメント確認
+
+```bash
+$ sh check_documents.sh
+```
+
+# ドキュメント検索
+
+```bash
+$ sh search_documents.sh
+```
+
 # 削除
 
 ```bash
