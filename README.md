@@ -103,15 +103,13 @@ AWS の VPC をしっかり理解することができたので読んでよか�
 
 ### 8月
 - React開発現場の教科書
-
-Atomic Design, CSS をうまく取り扱う各種方法、スタイルガイドやlintやjestなど品質に関わる部分、の3つについてはこの本によって存在を知ることができてよかった。
-React/Redux の概念と書き方については、公式のチュートリアルで十分かなという印象を受けた。
+  - Atomic Design, CSS をうまく取り扱う各種方法、スタイルガイドやlintやjestなど品質に関わる部分、の3つについてはこの本によって存在を知ることができてよかった。
+  - React/Redux の概念と書き方については、公式のチュートリアルで十分かなという印象を受けた。
 
 ### 9月
 - 人を動かす
-
-とてもためになった。チームリードの仕事をする上でもかなり役に立ちそう。
-重要感を持たせるのは何より重要。そして、自分が正しいかどうかに関係なく相手を尊重するのが大切。
+  - とてもためになった。チームリードの仕事をする上でもかなり役に立ちそう。
+  - 重要感を持たせるのは何より重要。そして、自分が正しいかどうかに関係なく相手を尊重するのが大切。
 
 ### 10月
 - エンジニアリング組織論への招待 ~不確実性に向き合う思考と組織のリファクタリング
@@ -119,11 +117,9 @@ React/Redux の概念と書き方については、公式のチュートリア�
   - [まとめた](https://github.com/longtime1116/learning/tree/master/engineering_organization)
 
 ### 11月
-- [AWSクラウドデザインパターン](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
-  - メモは[こちら](https://github.com/longtime1116/learning/tree/master/cdp)
-  - AWS のサービスを組み合わせてどのようなことが実現できるのかのおおまかなイメージをつかむことができた。
-  - 読む途中で知らなかった単語やAWSのサービスを学びながら読んだので、ネットワークの基礎知識の復習もできた。
-  - 「EC2 に xxx というミドルウェアを導入することで xxx サーバとして利用し、」みたいなところについては、自分で導入したわけではないので実際に試そうとしたらつまずくところが多そうだなと感じた。
+- [AWSクラウドデザインパターン](https://github.com/longtime1116/learning/tree/master/cdp)
+  - [こちら](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)が元のページ。
+  - AWSのサービスを使ってどういうことが実現できるのか？どう使うのが良いのか？についてインデックスを張っておけば、必要に応じて仕事の場で提案できると思ったので、読むことにした。
 
 - SOFT SKILLS  ソフトウェア開発者の人生マニュアル
   - この本の作者は目標を設定してそこに向かって突き進んでいくタイプのようだった。
@@ -169,12 +165,10 @@ React/Redux の概念と書き方については、公式のチュートリア�
 
 - [ゼロから学ぶ Deep Learning](https://github.com/longtime1116/deep-learning-from-scratch)
 
-- 入門 Kubernetes
-  - [まとめた](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes)
+- [入門 Kubernetes](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes)
 
 ### 9月
-- ティール組織
-  - [まとめた](https://github.com/longtime1116/learning/tree/master/teal)
+- [ティール組織](https://github.com/longtime1116/learning/tree/master/teal)
 
 
 # 読み中のもの
