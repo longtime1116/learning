@@ -31,7 +31,7 @@
   - 今の自分が身につけたいことは基本的にはあまり身に付かなかった。
 
 ### 3月
-- [リファクタリング:Rubyエディション](https://github.com/longtime1116/learning/tree/master/refactoring_ruby)
+- [リファクタリング:Rubyエディション](https://github.com/longtime1116/refactoring_ruby)
   - かなりの良書。Ruby を通じて設計について学ぶならこれ。
   - Rails で、動くものは作れるがどこに何を書くべきかについて自分なりに自信を持って意見が言えないなと思っていたので読んだ。
   - 読んだ結果、設計レベルの能力が身につき、一気にアウトプットの質が変わった
