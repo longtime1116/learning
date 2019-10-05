@@ -46,7 +46,7 @@
 
 ### 5月
 
-- Ruby によるデザインパターン([感想とソースコード](https://github.com/longtime1116/learning/tree/master/design_pattern))
+- Ruby によるデザインパターン([感想とソースコード](https://github.com/longtime1116/ruby_design_pattern))
   - Ruby を通じて設計を学ぶために読んだ。
   - Refactoring:Ruby と重複する部分は多いが、まぁ学びはあった
 
