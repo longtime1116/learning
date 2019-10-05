@@ -1,5 +1,5 @@
 # このリポジトリは何？
-- 読書を通じた学習のログ
+- 読書を通じた学習のログ置き場
 - このページに書くもの: 本の名前、なぜ読んだか、感想等へのリンク
 - このページに書かないもの: 感想、メモ、ソースコード
 
@@ -20,11 +20,11 @@
 
 ## 2018年
 ### 1月
-- これだけ！KPT
+- これだけ！KPT([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%81%93%E3%82%8C%E3%81%A0%E3%81%91kpt))
   - チームで KPT が行われていたが、そもそも本質的には何を目的としているのか、うちのやり方は適切なのだろうか、等を知っておきたかったので読んだ。
 
 ### 2月
-- パーフェクトRuby on Rails
+- パーフェクトRuby on Rails([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88ruby-on-rails))
   - Rails を書く上での不安をうまく言語化できていない状態でなんとなく読んだ。得るものは少なかった。
 
 ### 3月
@@ -34,13 +34,13 @@
   - 読んだ結果、設計レベルの能力が身につき、一気にアウトプットの質が変わった
 
 ### 4月
-- 達人に学ぶ SQL徹底指南書
+- 達人に学ぶ SQL徹底指南書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E9%81%94%E4%BA%BA%E3%81%AB%E5%AD%A6%E3%81%B6-sql%E5%BE%B9%E5%BA%95%E6%8C%87%E5%8D%97%E6%9B%B8))
   - SQL に対する苦手意識を克服するために読んだ。
 
 - Effective Ruby([感想とソースコード](https://github.com/longtime1116/effective_ruby))
-  - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたいならこれ。
+  - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたかったから読んだ
 
-- 伝説の外資トップが説く リーダーの教科書
+- 伝説の外資トップが説く リーダーの教科書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E4%BC%9D%E8%AA%AC%E3%81%AE%E5%A4%96%E8%B3%87%E3%83%88%E3%83%83%E3%83%97%E3%81%8C%E8%AA%AC%E3%81%8F-%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8))
   - チームリーダーになりつつあったので読んだ。
 
 
@@ -50,7 +50,7 @@
   - Ruby を通じて設計を学ぶために読んだ。
   - Refactoring:Ruby と重複する部分は多いが、まぁ学びはあった
 
-- マスタリングTCP/IP
+- マスタリングTCP/IP([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0tcpip))
   - VPC を触っていてモヤモヤしているところがあったので、サラッと読んだ。
 
 - メタプログラミングRuby([感想とソースコード](https://github.com/longtime1116/meta_programming_ruby))
@@ -58,7 +58,7 @@
 
 ### 7月
 
-- スタンフォードの自分を変える教室
+- スタンフォードの自分を変える教室([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%81%AE%E8%87%AA%E5%88%86%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B%E6%95%99%E5%AE%A4))
   - 克己心を鍛えたくて読んだ
 
 ### 8月
@@ -66,7 +66,7 @@
   - 公式チュートリアルをやったが体系的に学べていないなという感覚があったので読んだ。
 
 ### 9月
-- 人を動かす
+- 人を動かす([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99))
   - かなりの良書。リーダーとしてチームを変えていくにあたり、人の心がどう動くのかも含めた上での合理的な行動を取るのが大事だと感じ、読んだ。
 
 ### 10月
@@ -78,7 +78,7 @@
   - [こちら](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)が元のページ。
   - AWSのサービスを使ってどういうことが実現できるのか？どう使うのが良いのか？についてインデックスを張っておけば、必要に応じて仕事の場で提案できると思ったので、読むことにした。
 
-- SOFT SKILLS  ソフトウェア開発者の人生マニュアル
+- SOFT SKILLS  ソフトウェア開発者の人生マニュアル([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#soft-skills--%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB))
   - 世間のエンジニアがどういう本を読んでどういうキャリアパスを描こうと思っているのかを知るために読んだ
 
 ## 2019年
@@ -87,20 +87,20 @@
 - すごいHaskellたのしく学ぼう!([ソースコード](https://github.com/longtime1116/haskell/tree/master/learn_you_a_haskell_for_great_good))
   - 関数型言語を触りたくて読んだ。
 
-- スタンフォードのストレスを力に変える教科書
+- スタンフォードのストレスを力に変える教科書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%81%AE%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%82%92%E5%8A%9B%E3%81%AB%E5%A4%89%E3%81%88%E3%82%8B%E6%95%99%E7%A7%91%E6%9B%B8))
   - マネージャ業務をする中でいろいろなストレスを感じていたのだが、ストレスそのものは悪ではないという認識ができるようになると強いなと思い読んだ。
 
 ### 4月
-- エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド
+- エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%83%91%E3%82%B9-%E3%83%86%E3%83%83%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%89%E3%81%8B%E3%82%89cto%E3%81%BE%E3%81%A7%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E5%90%91%E4%B8%8A%E3%82%AC%E3%82%A4%E3%83%89))
   - 我流でリーダー => マネージャと役割を広げ視座を高めてきたが、世間的なエンジニアリングマネージャのキャリアと比べてみるのも大事かなと思い、読むことにした。
 
-- サブスクリプション
+- サブスクリプション([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3))
   - より役割を広げていくには会社のビジネスの仕組みや方向性を理解していかなければならないと感じ、読んだ。
 
 - このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法([感想とメモ](https://github.com/longtime1116/learning/tree/master/ten_shikou))
   - なんか読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
 
-- 天才を殺す凡人
+- 天才を殺す凡人([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E5%A4%A9%E6%89%8D%E3%82%92%E6%AE%BA%E3%81%99%E5%87%A1%E4%BA%BA))
   - なんか紹介されたのでせっかくなので読んだ。あんまり経緯は覚えていない。
 
 ### 5月
