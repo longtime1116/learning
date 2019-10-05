@@ -71,7 +71,7 @@
   - とりあえずモヤモヤしているところだけ整理するためにサラッと読んだ。
   - AWS の VPC をしっかり理解することができたので読んでよかった。
 
-- [メタプログラミングRuby](https://github.com/longtime1116/learning/tree/master/meta)
+- [メタプログラミングRuby](https://github.com/longtime1116/meta_programming_ruby)
   - Ruby の言語仕様をさらに詳しく知るために読んだ
 
 ### 7月
