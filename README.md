@@ -42,7 +42,7 @@
   - 3値論理と集合思考というSQL独自の考え方を学べたのが大きかった。
   - where, group by, having については直感的に理解できるようになったので、SQLに対する苦手意識が減った。
 
-- [Effective Ruby](https://github.com/longtime1116/learning/tree/master/effective_ruby)
+- [Effective Ruby](https://github.com/longtime1116/effective_ruby)
   - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたいならこれ。
 
 - 伝説の外資トップが説く リーダーの教科書
