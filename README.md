@@ -186,7 +186,7 @@ React/Redux の概念と書き方については、公式のチュートリア�
 - [実践ドメイン駆動設計](https://github.com/longtime1116/learning/tree/master/ddd)
 - プログラミングコンテストチャレンジブック
 - みんなのデータ構造
-- [Elasticsearch実践ガイド](https://github.com/longtime1116/learning/tree/master/elasticsearch_jissen)
+- [Elasticsearch実践ガイド](https://github.com/longtime1116/elasticsearch_sandbox)
 - ITエンジニアが覚えておきたい英語動詞30
 
 # 読むべきもの
