@@ -115,9 +115,9 @@
 
 # 読み中のもの
 - 実践ドメイン駆動設計([メモ](https://github.com/longtime1116/learning/tree/master/ddd))
+- Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
 - プログラミングコンテストチャレンジブック
 - みんなのデータ構造
-- Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
 - ITエンジニアが覚えておきたい英語動詞30
 
 # 読むべきもの
@@ -135,8 +135,7 @@
 
 # 途中まで読んだ上で今はこれ以上は読まなくて良いと判断した本
 - オブジェクト指向設計実践ガイド―Ｒｕｂｙでわかる進化しつづける柔軟なアプリケーションの育て方(サンディメッツ本)
-
-リファクタリングRuby、Rubyによるデザインパターンで学んだ部分と大きく重複していたのでスキップ
+  - リファクタリングRuby、Rubyによるデザインパターンで学んだ部分と大きく重複していたのでスキップ
 
 - プログラマのためのSQL 第4版
 
@@ -148,7 +147,7 @@
 
 # pending
 - SCRUM BOOT CAMP THE BOOK
-- [Rubyソースコード完全解説](http://i.loveruby.net/ja/rhg/book/)
+- [Rubyソースコード完全解説](http://i.loveruby.net/ja/rhg/book/)([メモ](https://github.com/longtime1116/learning/tree/master/cruby_memo))
 - Rubyのしくみ
   - 2018/5/16、半分ほど読み進めたが「今じゃない」感が強かった。今はまだこの本を読む動機が足りない。したがって楽しく読めないし、頭に残らない。CRuby 読むぞ、という肝が据わってから読みたい。
   - 2018/6/14、RubyKaigi後CRuby読むぞという気持ちが高まっている。Rubyソースコード完全解説を読み終わったら読みたい。
