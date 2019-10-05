@@ -63,7 +63,7 @@
 
 ### 8月
 - React開発現場の教科書([感想とメモ](https://github.com/longtime1116/learning/tree/master/react_develop_genba))
-  - React/Redux について公式チュートリアルをやって実務でも触れるようになったが、体系的に学べていないなという感覚があったので読んだ。
+  - React/Redux について公式チュートリアルをやって実務でも触っていたが、社内の React/Redux チュートリアルを作成するにあたり体系的に学んでいた方がいいよなという感覚があったので読んだ。
 
 ### 9月
 - 人を動かす([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99))
