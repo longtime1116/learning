@@ -25,20 +25,20 @@
 
 ### 2月
 - パーフェクトRuby on Rails([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%83%91%E3%83%BC%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88ruby-on-rails))
-  - Rails を書く上での不安をうまく言語化できていない状態でなんとなく読んだ。得るものは少なかった。
+  - Rails を書く上での不安をうまく言語化できていない状態でなんとなく読んだ。したがって得るものは少なかった。迷走。
 
 ### 3月
 - リファクタリング:Rubyエディション([感想とソースコード](https://github.com/longtime1116/refactoring_ruby))
   - かなりの良書。Ruby を通じて設計について学ぶならこれ。
-  - Rails で、動くものは作れるがどこに何を書くべきかについて自分なりに自信を持って意見が言えないなと思っていたので読んだ。
+  - Rails で、動くものは作れるがどこに何を書くべきかについて自分なりに自信を持って意見が言えないなと思っていたが、それは Rails の能力というよりも設計の能力だろうと気づいた。それで読んだ。
   - 読んだ結果、設計レベルの能力が身につき、一気にアウトプットの質が変わった
 
 ### 4月
 - 達人に学ぶ SQL徹底指南書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E9%81%94%E4%BA%BA%E3%81%AB%E5%AD%A6%E3%81%B6-sql%E5%BE%B9%E5%BA%95%E6%8C%87%E5%8D%97%E6%9B%B8))
-  - SQL に対する苦手意識を克服するために読んだ。
+  - SQL に対する苦手意識を克服するために読んだ。group by とかを having を直感的に理解できるようになりたかった(読んだらなった)。
 
 - Effective Ruby([感想とソースコード](https://github.com/longtime1116/effective_ruby))
-  - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたかったから読んだ
+  - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたかったから読んだ。
 
 - 伝説の外資トップが説く リーダーの教科書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E4%BC%9D%E8%AA%AC%E3%81%AE%E5%A4%96%E8%B3%87%E3%83%88%E3%83%83%E3%83%97%E3%81%8C%E8%AA%AC%E3%81%8F-%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8))
   - チームリーダーになりつつあったので読んだ。
@@ -47,11 +47,11 @@
 ### 5月
 
 - Ruby によるデザインパターン([感想とソースコード](https://github.com/longtime1116/ruby_design_pattern))
-  - Ruby を通じて設計を学ぶために読んだ。
+  - さらに設計を学ぶために読んだ。
   - Refactoring:Ruby と重複する部分は多いが、まぁ学びはあった
 
 - マスタリングTCP/IP([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0tcpip))
-  - VPC を触っていてモヤモヤしているところがあったので、サラッと読んだ。
+  - VPC を触っていてモヤモヤしているところがあったので、前提知識を埋めるために読んだ。
 
 - メタプログラミングRuby([感想とソースコード](https://github.com/longtime1116/meta_programming_ruby))
   - Ruby の言語仕様をさらに詳しく知るために読んだ
@@ -63,15 +63,16 @@
 
 ### 8月
 - React開発現場の教科書([感想とメモ](https://github.com/longtime1116/learning/tree/master/react_develop_genba))
-  - 公式チュートリアルをやったが体系的に学べていないなという感覚があったので読んだ。
+  - React/Redux について公式チュートリアルをやって実務でも触れるようになったが、体系的に学べていないなという感覚があったので読んだ。
 
 ### 9月
 - 人を動かす([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E4%BA%BA%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99))
-  - かなりの良書。リーダーとしてチームを変えていくにあたり、人の心がどう動くのかも含めた上での合理的な行動を取るのが大事だと感じ、読んだ。
+  - かなりの良書。リーダーとしてチームを変えていくにあたり、人の心がどう動くのかも考慮した上で全体最適な行動を取るのが真の合理的な行動ではないかと感じており、そういう自分にとって必要そうだったので読んだ。
 
 ### 10月
 - エンジニアリング組織論への招待 ~不確実性に向き合う思考と組織のリファクタリング([感想](https://github.com/longtime1116/learning/tree/master/engineering_organization))
   - かなりの良書。チームリーダーからマネージャへと意識を変えていく上で、エンジニアリング組織について学びたいことが書いてありそうだったので読んだ。
+  - その結果、色々経て[こんな記事](https://texta.pixta.jp/entry/2019/05/09/120000)が生まれた。我ながらいい記事だと思う。
 
 ### 11月
 - AWSクラウドデザインパターン([感想とメモ](https://github.com/longtime1116/learning/tree/master/cdp))
@@ -98,27 +99,34 @@
   - より役割を広げていくには会社のビジネスの仕組みや方向性を理解していかなければならないと感じ、読んだ。
 
 - このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法([感想とメモ](https://github.com/longtime1116/learning/tree/master/ten_shikou))
-  - なんか読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
+  - なんか薦められてなんとなく読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
 
 - 天才を殺す凡人([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E5%A4%A9%E6%89%8D%E3%82%92%E6%AE%BA%E3%81%99%E5%87%A1%E4%BA%BA))
-  - なんか紹介されたのでせっかくなので読んだ。あんまり経緯は覚えていない。
+  - ↑の本と合わせて紹介されたのでせっかくなので読んだ。あんまり経緯は覚えていない。
 
 ### 5月
 
 - ゼロから学ぶ Deep Learning([感想とソースコード](https://github.com/longtime1116/deep-learning-from-scratch))
+  - 時代は機械学習！ということで読んだ(ベトナムの開発拠点が機械学習を使った機能を開発しており、こりゃ日本側でもやるべきときが来るかもなと思って早めに押さえておこうとおもって読んだ)。
 
 - 入門 Kubernetes([メモ](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes))
+  - 時代はk8s！ということで読んだ(少しずつ社内に実験的にk8sが導入されつつあり、早めに概念くらいは押さえておくべきだなと感じて読んだ)
 
 ### 9月
 - ティール組織([感想](https://github.com/longtime1116/learning/tree/master/teal))
+  - ちょくちょく目にするし話題にも出るので、共通言語として押さえておいた方が良いかなと思い読んだ。
+  - 組織に対するエンジニアリングの本は「エンジニアリング組織論への招待」しか読んでおらず、ちょくちょくいろんな本を読んでいくのも良さそうだなと思ったというのもある。
 
 
 # 読み中のもの
 - 実践ドメイン駆動設計([メモ](https://github.com/longtime1116/learning/tree/master/ddd))
+  - ドメイン駆動設計の言葉を使うと今まで自分が考えていたことを一般的な言葉で言語化できそうだ！ということに気づいた。なので、ドメイン駆動設計を読めば自分の思考の整理になるし、当然自分の知らなかった概念も学べるだろう。となり、本腰を入れて読むことにした。
 - Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
+  - 仕事で Cloudsearch から Elasticsearch に移行することにしたので、読んでそれの人になろうかなと思った。
+- ITエンジニアが覚えておきたい英語動詞30
+  - ベトナム出張があるので、最低限思ったことを言葉にできるようにしておきたくて読むことにした。
 - プログラミングコンテストチャレンジブック
 - みんなのデータ構造
-- ITエンジニアが覚えておきたい英語動詞30
 
 # 読むべきもの
 
