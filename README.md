@@ -1,4 +1,9 @@
-# 読んだもの
+# このリポジトリは何？
+- 読書を通じた学習のログ
+- このページに書くもの: 本の名前、なぜ読んだか、感想等へのリンク
+- このページに書かないもの: 感想、メモ、ソースコード
+
+# 読了
 ## 2017年
 ### 7月
 - Ruby on Rails 5アプリケーションプログラミング
@@ -23,7 +28,7 @@
   - Rails を書く上での不安をうまく言語化できていない状態でなんとなく読んだ。得るものは少なかった。
 
 ### 3月
-- [リファクタリング:Rubyエディション](https://github.com/longtime1116/refactoring_ruby)
+- リファクタリング:Rubyエディション([感想とソースコード](https://github.com/longtime1116/refactoring_ruby))
   - かなりの良書。Ruby を通じて設計について学ぶならこれ。
   - Rails で、動くものは作れるがどこに何を書くべきかについて自分なりに自信を持って意見が言えないなと思っていたので読んだ。
   - 読んだ結果、設計レベルの能力が身につき、一気にアウトプットの質が変わった
@@ -32,7 +37,7 @@
 - 達人に学ぶ SQL徹底指南書
   - SQL に対する苦手意識を克服するために読んだ。
 
-- [Effective Ruby](https://github.com/longtime1116/effective_ruby)
+- Effective Ruby([感想とソースコード](https://github.com/longtime1116/effective_ruby))
   - かなりの良書。Ruby の言語仕様、及び Ruby like な書き方について学びたいならこれ。
 
 - 伝説の外資トップが説く リーダーの教科書
@@ -41,14 +46,14 @@
 
 ### 5月
 
-- [Ruby によるデザインパターン](https://github.com/longtime1116/learning/tree/master/design_pattern)
+- Ruby によるデザインパターン([感想とソースコード](https://github.com/longtime1116/learning/tree/master/design_pattern))
   - Ruby を通じて設計を学ぶために読んだ。
   - Refactoring:Ruby と重複する部分は多いが、まぁ学びはあった
 
 - マスタリングTCP/IP
   - VPC を触っていてモヤモヤしているところがあったので、サラッと読んだ。
 
-- [メタプログラミングRuby](https://github.com/longtime1116/meta_programming_ruby)
+- メタプログラミングRuby([感想とソースコード](https://github.com/longtime1116/meta_programming_ruby))
   - Ruby の言語仕様をさらに詳しく知るために読んだ
 
 ### 7月
@@ -57,7 +62,7 @@
   - 克己心を鍛えたくて読んだ
 
 ### 8月
-- [React開発現場の教科書](https://github.com/longtime1116/learning/tree/master/react_develop_genba)
+- React開発現場の教科書([感想とメモ](https://github.com/longtime1116/learning/tree/master/react_develop_genba))
   - 公式チュートリアルをやったが体系的に学べていないなという感覚があったので読んだ。
 
 ### 9月
@@ -65,11 +70,11 @@
   - かなりの良書。リーダーとしてチームを変えていくにあたり、人の心がどう動くのかも含めた上での合理的な行動を取るのが大事だと感じ、読んだ。
 
 ### 10月
-- [エンジニアリング組織論への招待 ~不確実性に向き合う思考と組織のリファクタリング](https://github.com/longtime1116/learning/tree/master/engineering_organization)
+- エンジニアリング組織論への招待 ~不確実性に向き合う思考と組織のリファクタリング([感想](https://github.com/longtime1116/learning/tree/master/engineering_organization))
   - かなりの良書。チームリーダーからマネージャへと意識を変えていく上で、エンジニアリング組織について学びたいことが書いてありそうだったので読んだ。
 
 ### 11月
-- [AWSクラウドデザインパターン](https://github.com/longtime1116/learning/tree/master/cdp)
+- AWSクラウドデザインパターン([感想とメモ](https://github.com/longtime1116/learning/tree/master/cdp))
   - [こちら](http://aws.clouddesignpattern.org/index.php/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)が元のページ。
   - AWSのサービスを使ってどういうことが実現できるのか？どう使うのが良いのか？についてインデックスを張っておけば、必要に応じて仕事の場で提案できると思ったので、読むことにした。
 
@@ -79,7 +84,7 @@
 ## 2019年
 ### 2月
 
-- [すごいHaskellたのしく学ぼう!](https://github.com/longtime1116/haskell/tree/master/learn_you_a_haskell_for_great_good)
+- すごいHaskellたのしく学ぼう!([ソースコード](https://github.com/longtime1116/haskell/tree/master/learn_you_a_haskell_for_great_good))
   - 関数型言語を触りたくて読んだ。
 
 - スタンフォードのストレスを力に変える教科書
@@ -92,7 +97,7 @@
 - サブスクリプション
   - より役割を広げていくには会社のビジネスの仕組みや方向性を理解していかなければならないと感じ、読んだ。
 
-- [このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法](https://github.com/longtime1116/learning/tree/master/ten_shikou)
+- このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法([感想とメモ](https://github.com/longtime1116/learning/tree/master/ten_shikou))
   - なんか読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
 
 - 天才を殺す凡人
@@ -100,19 +105,19 @@
 
 ### 5月
 
-- [ゼロから学ぶ Deep Learning](https://github.com/longtime1116/deep-learning-from-scratch)
+- ゼロから学ぶ Deep Learning([感想とソースコード](https://github.com/longtime1116/deep-learning-from-scratch))
 
-- [入門 Kubernetes](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes)
+- 入門 Kubernetes([メモ](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes))
 
 ### 9月
-- [ティール組織](https://github.com/longtime1116/learning/tree/master/teal)
+- ティール組織([感想](https://github.com/longtime1116/learning/tree/master/teal))
 
 
 # 読み中のもの
-- [実践ドメイン駆動設計](https://github.com/longtime1116/learning/tree/master/ddd)
+- 実践ドメイン駆動設計([メモ](https://github.com/longtime1116/learning/tree/master/ddd))
 - プログラミングコンテストチャレンジブック
 - みんなのデータ構造
-- [Elasticsearch実践ガイド](https://github.com/longtime1116/elasticsearch_sandbox)
+- Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
 - ITエンジニアが覚えておきたい英語動詞30
 
 # 読むべきもの
