@@ -33,6 +33,6 @@ class User
 end
 
 m = Money.new(2,1,3,"yen")
-p m.to_s
+p m.to_s #=> 213yen
 user = User.new(m)
-p user.money
+p user.money #=> 213yen
