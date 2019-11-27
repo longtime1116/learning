@@ -21,7 +21,7 @@ end
 
 class Subscriber
 
-  def initialize(name, *types)
+  def initialize(name, types)
     @name = name
     @types = types
   end
@@ -52,8 +52,8 @@ end
 
 
 publisher = DomainEventPublisher.new
-subscriber1 = Subscriber.new("pixta","ItemDownloaded", "ItemSearched")
-subscriber2 = Subscriber.new("lightbox","ItemLiked")
+subscriber1 = Subscriber.new("pixta",["ItemDownloaded", "ItemSearched"])
+subscriber2 = Subscriber.new("lightbox",["ItemLiked"])
 publisher.subscribe(subscriber1)
 publisher.subscribe(subscriber2)
 event1 = Event.new("ItemDownloaded")
