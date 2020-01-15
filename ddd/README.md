@@ -282,3 +282,33 @@
   * メッセージング
 * RESTベースの通知が適するのは、多数のクライアントがたった一つのURLを使って同じ通知を要求するケース
 * メッセージングが適するのは、クライアントが多くの通知を取りに行かなければならない時。(たくさんのRESTベースの通知を非同期で取得すると、順番が問題になる)
+
+# 9章 モジュール
+## 9.1
+* ドメインモデルをまとめるモジュールの場合は、entity, value object, service, event を横串で特定の意味合い(境界づけられたコンテキスト！！)でパッケージングしたもの
+* モジュール選択時は、ユビキタス言語を用い、ビジネス上の概念の凝集した集合を含んでいるものを選ぶべし。
+## 9.2/9.3
+* プロダクト名をモジュール名としない！！！
+* ディレクトリ構造の例
+  * com.saasovation.identityaccess.domain.model
+    * ここに Service や Entity の抽象基底クラスを作るなどする
+    * identityaccess が、ほぼほぼ境界づけられたコンテキスト
+* [GitHub](https://github.com/VaughnVernon/IDDD_Samples/tree/master/iddd_agilepm/src/main/java/com/saasovation/agilepm/domain/model)
+
+## 9.4
+* 「モジュール」という言葉が別の意味で使われている。
+  * 問題空間でいう境界づけられたコンテキストを、解決空間に対応させたものとしてのモジュール
+  * ドメインモデルのひとつとしてのモジュール
+* 例
+  * subscription_buisiness.domain.models
+    * contractor
+    * download
+    * plan
+    * subscription(planへの参照があり、単一方向の依存関係)
+
+## 9.6
+* 境界づけられたコンテキストで分断する前に、モジュール単位を考える方がいい。
+  * モジュール内部に複数の境界づけられたコンテキストが存在する方が、複数の境界づけられたコンテキストにモジュールがまたがる方が厳しいので。
+
+# 10章 集約
+
