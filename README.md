@@ -4,19 +4,65 @@
 - このページに書かないもの: 感想、メモ、ソースコード
 
 # 読了
-## 2017年
-### 7月
-- Ruby on Rails 5アプリケーションプログラミング
-- 改訂新版JavaScript本格入門 ~モダンスタイルによる基礎から現場での応用まで
-- スッキリわかる SQL 入門 ドリル215問付き!
-- アジャイルサムライ
+## 2020年
+### 1月
+- 楽々ERDレッスン([感想](https://github.com/longtime1116/learning/tree/master/rakuraku_erd))
+  - 自分でとあるアプリケーションを作ろうと思い、そういえば物理設計と論理設計とかちゃんと学んだことなかったなと思って読むことにした
 
-### 8月〜12月
-- webを支える技術
-- プリンシプルオブプログラミング
-- SQLアンチパターン
-- パーフェクト Ruby
-- 部下育成の教科書
+### 4月
+- マイクロサービスアーキテクチャ([メモ](https://github.com/longtime1116/learning/tree/master/microservices_architecture))
+  - マイクロサービスアーキテクチャという概念はなんとなくで理解しているが、実運用上で注意すべきことなどはわかっていないので、一冊読んでおきたいと思った。
+- 実践ドメイン駆動設計([メモ](https://github.com/longtime1116/learning/tree/master/ddd))
+  - ドメイン駆動設計の言葉を使うと今まで自分が考えていたことを一般的な言葉で言語化できそうだ！ということに気づいた。なので、ドメイン駆動設計を読めば自分の思考の整理になるし、当然自分の知らなかった概念も学べるだろう。となり、本腰を入れて読むことにした。
+
+### 5月
+- ソフトウェア・ファースト([感想](https://github.com/longtime1116/learning/tree/master/software_first))
+  - ビジネスの視点からソフトウェアを捉えていると思われるので、今の自分が視座を上げてビジネスに貢献していく手がかりをつかめるかと思った。
+- 初めてのGraphQL([ソースコード、感想](https://github.com/longtime1116/graphql_sandbox/tree/master/learning_graphql))
+  - 今後使っていくことになりそう & 自分でアプリケーション作るときに使ってみたいので読むことにした
+
+## 2019年
+### 2月
+
+- すごいHaskellたのしく学ぼう!([ソースコード](https://github.com/longtime1116/haskell/tree/master/learn_you_a_haskell_for_great_good))
+  - 関数型言語を触りたくて読んだ。
+
+- スタンフォードのストレスを力に変える教科書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%81%AE%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%82%92%E5%8A%9B%E3%81%AB%E5%A4%89%E3%81%88%E3%82%8B%E6%95%99%E7%A7%91%E6%9B%B8))
+  - マネージャ業務をする中でいろいろなストレスを感じていたのだが、ストレスそのものは悪ではないという認識ができるようになると強いなと思い読んだ。
+
+### 4月
+- エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%83%91%E3%82%B9-%E3%83%86%E3%83%83%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%89%E3%81%8B%E3%82%89cto%E3%81%BE%E3%81%A7%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E5%90%91%E4%B8%8A%E3%82%AC%E3%82%A4%E3%83%89))
+  - 我流でリーダー => マネージャと役割を広げ視座を高めてきたが、世間的なエンジニアリングマネージャのキャリアと比べてみるのも大事かなと思い、読むことにした。
+
+- サブスクリプション([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3))
+  - より役割を広げていくには会社のビジネスの仕組みや方向性を理解していかなければならないと感じ、読んだ。
+
+- このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法([感想とメモ](https://github.com/longtime1116/learning/tree/master/ten_shikou))
+  - なんか薦められてなんとなく読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
+
+- 天才を殺す凡人([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E5%A4%A9%E6%89%8D%E3%82%92%E6%AE%BA%E3%81%99%E5%87%A1%E4%BA%BA))
+  - ↑の本と合わせて紹介されたのでせっかくなので読んだ。あんまり経緯は覚えていない。
+
+### 5月
+
+- ゼロから学ぶ Deep Learning([感想とソースコード](https://github.com/longtime1116/deep-learning-from-scratch))
+  - 時代は機械学習！ということで読んだ(ベトナムの開発拠点が機械学習を使った機能を開発しており、こりゃ日本側でもやるべきときが来るかもなと思って早めに押さえておこうとおもって読んだ)。
+
+- 入門 Kubernetes([メモ](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes))
+  - 時代はk8s！ということで読んだ(少しずつ社内に実験的にk8sが導入されつつあり、早めに概念くらいは押さえておくべきだなと感じて読んだ)
+
+### 9月
+- ティール組織([感想](https://github.com/longtime1116/learning/tree/master/teal))
+  - ちょくちょく目にするし話題にも出るので、共通言語として押さえておいた方が良いかなと思い読んだ。
+  - 組織に対するエンジニアリングの本は「エンジニアリング組織論への招待」しか読んでおらず、ちょくちょくいろんな本を読んでいくのも良さそうだなと思ったというのもある。
+
+### 10月
+- Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
+  - 仕事で Cloudsearch から Elasticsearch に移行することにしたので、読んでそれの人になろうかなと思った。
+
+### 11月
+- ITエンジニアが覚えておきたい英語動詞30([感想](https://github.com/longtime1116/learning/tree/master/it_english_verbs))
+  - ベトナム出張があるので、最低限思ったことを言葉にできるようにしておきたくて読むことにした。
 
 ## 2018年
 ### 1月
@@ -82,68 +128,21 @@
 - SOFT SKILLS  ソフトウェア開発者の人生マニュアル([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#soft-skills--%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E4%BA%BA%E7%94%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB))
   - 世間のエンジニアがどういう本を読んでどういうキャリアパスを描こうと思っているのかを知るために読んだ
 
-## 2019年
-### 2月
+## 2017年
+### 7月
+- Ruby on Rails 5アプリケーションプログラミング
+- 改訂新版JavaScript本格入門 ~モダンスタイルによる基礎から現場での応用まで
+- スッキリわかる SQL 入門 ドリル215問付き!
+- アジャイルサムライ
 
-- すごいHaskellたのしく学ぼう!([ソースコード](https://github.com/longtime1116/haskell/tree/master/learn_you_a_haskell_for_great_good))
-  - 関数型言語を触りたくて読んだ。
-
-- スタンフォードのストレスを力に変える教科書([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%81%AE%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%E3%82%92%E5%8A%9B%E3%81%AB%E5%A4%89%E3%81%88%E3%82%8B%E6%95%99%E7%A7%91%E6%9B%B8))
-  - マネージャ業務をする中でいろいろなストレスを感じていたのだが、ストレスそのものは悪ではないという認識ができるようになると強いなと思い読んだ。
-
-### 4月
-- エンジニアのためのマネジメントキャリアパス ―テックリードからCTOまでマネジメントスキル向上ガイド([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%83%91%E3%82%B9-%E3%83%86%E3%83%83%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%89%E3%81%8B%E3%82%89cto%E3%81%BE%E3%81%A7%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E3%82%B9%E3%82%AD%E3%83%AB%E5%90%91%E4%B8%8A%E3%82%AC%E3%82%A4%E3%83%89))
-  - 我流でリーダー => マネージャと役割を広げ視座を高めてきたが、世間的なエンジニアリングマネージャのキャリアと比べてみるのも大事かなと思い、読むことにした。
-
-- サブスクリプション([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3))
-  - より役割を広げていくには会社のビジネスの仕組みや方向性を理解していかなければならないと感じ、読んだ。
-
-- このまま今の会社にいていいのか？と一度でも思ったら読む 転職の思考法([感想とメモ](https://github.com/longtime1116/learning/tree/master/ten_shikou))
-  - なんか薦められてなんとなく読んでみたけどまぁ自分のキャリアのことは自分の頭で考えて自分で結論を出せばそれで十分だなという感じだった。
-
-- 天才を殺す凡人([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E5%A4%A9%E6%89%8D%E3%82%92%E6%AE%BA%E3%81%99%E5%87%A1%E4%BA%BA))
-  - ↑の本と合わせて紹介されたのでせっかくなので読んだ。あんまり経緯は覚えていない。
-
-### 5月
-
-- ゼロから学ぶ Deep Learning([感想とソースコード](https://github.com/longtime1116/deep-learning-from-scratch))
-  - 時代は機械学習！ということで読んだ(ベトナムの開発拠点が機械学習を使った機能を開発しており、こりゃ日本側でもやるべきときが来るかもなと思って早めに押さえておこうとおもって読んだ)。
-
-- 入門 Kubernetes([メモ](https://github.com/longtime1116/learning/tree/master/nyumon_kubernetes))
-  - 時代はk8s！ということで読んだ(少しずつ社内に実験的にk8sが導入されつつあり、早めに概念くらいは押さえておくべきだなと感じて読んだ)
-
-### 9月
-- ティール組織([感想](https://github.com/longtime1116/learning/tree/master/teal))
-  - ちょくちょく目にするし話題にも出るので、共通言語として押さえておいた方が良いかなと思い読んだ。
-  - 組織に対するエンジニアリングの本は「エンジニアリング組織論への招待」しか読んでおらず、ちょくちょくいろんな本を読んでいくのも良さそうだなと思ったというのもある。
-
-### 10月
-- Elasticsearch実践ガイド([メモとソースコード](https://github.com/longtime1116/elasticsearch_sandbox))
-  - 仕事で Cloudsearch から Elasticsearch に移行することにしたので、読んでそれの人になろうかなと思った。
-
-### 11月
-- ITエンジニアが覚えておきたい英語動詞30([感想](https://github.com/longtime1116/learning/tree/master/it_english_verbs))
-  - ベトナム出張があるので、最低限思ったことを言葉にできるようにしておきたくて読むことにした。
-
-## 2020年
-
-### 1月
-- 楽々ERDレッスン([感想](https://github.com/longtime1116/learning/tree/master/rakuraku_erd))
-  - 自分でとあるアプリケーションを作ろうと思い、そういえば物理設計と論理設計とかちゃんと学んだことなかったなと思って読むことにした
-
-### 4月
-- マイクロサービスアーキテクチャ([メモ](https://github.com/longtime1116/learning/tree/master/microservices_architecture))
-  - マイクロサービスアーキテクチャという概念はなんとなくで理解しているが、実運用上で注意すべきことなどはわかっていないので、一冊読んでおきたいと思った。
-- 実践ドメイン駆動設計([メモ](https://github.com/longtime1116/learning/tree/master/ddd))
-  - ドメイン駆動設計の言葉を使うと今まで自分が考えていたことを一般的な言葉で言語化できそうだ！ということに気づいた。なので、ドメイン駆動設計を読めば自分の思考の整理になるし、当然自分の知らなかった概念も学べるだろう。となり、本腰を入れて読むことにした。
-
-### 5月
-- ソフトウェア・ファースト([感想](https://github.com/longtime1116/learning/tree/master/software_first))
-  - ビジネスの視点からソフトウェアを捉えていると思われるので、今の自分が視座を上げてビジネスに貢献していく手がかりをつかめるかと思った。
+### 8月〜12月
+- webを支える技術
+- プリンシプルオブプログラミング
+- SQLアンチパターン
+- パーフェクト Ruby
+- 部下育成の教科書
 
 # 読み中
-- 初めてのGraphQL
-  - 今後使っていくことになりそう & 自分でアプリケーション作るときに使ってみたいので読むことにした
 - なるほどUnixプロセス―Rubyで学ぶUnixの基礎
   - 簡単そうな本だし評判もいいし、おさらいがてら読んでみておくかという気持ちになった。
 - How Google Works
