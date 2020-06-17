@@ -21,6 +21,10 @@
 - 初めてのGraphQL([ソースコード、感想](https://github.com/longtime1116/graphql_sandbox/tree/master/learning_graphql))
   - 今後使っていくことになりそう & 自分でアプリケーション作るときに使ってみたいので読むことにした
 
+### 6月
+- なるほどUnixプロセス―Rubyで学ぶUnixの基礎([ソースコード、感想](https://github.com/longtime1116/naruhodo_unix))
+  - 簡単そうな本だし評判もいいし、おさらいがてら読んでみておくかという気持ちになった。
+
 ## 2019年
 ### 2月
 
