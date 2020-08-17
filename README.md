@@ -32,6 +32,12 @@
 * [effective go](http://go.shibu.jp/effective_go.html)[ソースコード](https://github.com/longtime1116/go_sandbox/effective_go)
   * ↑と同じ理由。これ読み終わったらだいたい初歩的な知識が身につくだろうという目論見。
 
+### 8月
+- 英語耳
+  - 英語を再び学ぶ動機等は[こちら](https://github.com/longtime1116/lifelog/blob/master/weekly/20200810.md)参照
+  - かなりの良書だった。発音の仕方の説明が本当にうまい。今の自分に最も必要な知識だったと思う。
+  - 読了したが、訓練は継続していく
+
 ## 2019年
 ### 2月
 
