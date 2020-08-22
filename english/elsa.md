@@ -18,6 +18,7 @@ ELSA SPEAK のアセスメントテストに出てくる主要単語の発音記
 * urban: [ˈɚːbn]
 * marvelous: [ˈmɑrvʌlʌs]
 * journey: [dʒˈɚːni]
+* exposure: [ɪkspóʊʒɚ]
 * language: [lˈæŋgwɪdʒ]
 * huge: [hjúːdʒ]
 * afraid: [əfréɪd]
