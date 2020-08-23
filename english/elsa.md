@@ -22,6 +22,7 @@ ELSA SPEAK のアセスメントテストに出てくる主要単語の発音記
 * exposure: [ɪkspóʊʒɚ]
 * language: [lˈæŋgwɪdʒ]
 * huge: [hjúːdʒ]
+* stranger: [stréɪndʒɚ]
 * afraid: [əfréɪd]
 * correctly: [kəréktli]
 * confidently: [ˈkɑnfʌdʌntli]
