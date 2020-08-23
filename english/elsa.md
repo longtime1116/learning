@@ -16,6 +16,7 @@ ELSA SPEAK のアセスメントテストに出てくる主要単語の発音記
 * each: [íːtʃ]
 * travel: [trˈævl]
 * urban: [ˈɚːbn]
+* relax: [rɪlˈæks]
 * marvelous: [ˈmɑrvʌlʌs]
 * journey: [dʒˈɚːni]
 * exposure: [ɪkspóʊʒɚ]
