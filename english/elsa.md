@@ -23,6 +23,7 @@ ELSA SPEAK のアセスメントテストに出てくる主要単語の発音記
 * language: [lˈæŋgwɪdʒ]
 * huge: [hjúːdʒ]
 * stranger: [stréɪndʒɚ]
+* closest: [ˈkləʊsɪst]
 * afraid: [əfréɪd]
 * correctly: [kəréktli]
 * confidently: [ˈkɑnfʌdʌntli]
