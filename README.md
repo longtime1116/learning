@@ -32,13 +32,13 @@
   * ↑と同じ理由。これ読み終わったらだいたい初歩的な知識が身につくだろうという目論見。
 
 ### 8月
-- 英語耳[感想](https://github.com/longtime1116/learning/blob/master/book_review.md#英語耳)
+- 英語耳([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#英語耳))
   - 英語を再び学ぶ動機等は[こちら](https://github.com/longtime1116/lifelog/blob/master/weekly/20200810.md)参照
-- ニューヨーク発最強英語発音メソッド[感想](https://github.com/longtime1116/learning/blob/master/book_review.md#ニューヨーク発最強英語発音メソッド)
+- ニューヨーク発最強英語発音メソッド([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#ニューヨーク発最強英語発音メソッド))
   - 口と舌のホームポジションは、日本語話者と英語話者では違うのではないか？と思い、それっぽいことが書かれていそうなこの本を読んでみることにした。
 
 ### 9月
-- 最高の結果を出すKPIマネジメント[感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E6%9C%80%E9%AB%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92%E5%87%BA%E3%81%99kpi%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88)
+- 最高の結果を出すKPIマネジメント([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#%E6%9C%80%E9%AB%98%E3%81%AE%E7%B5%90%E6%9E%9C%E3%82%92%E5%87%BA%E3%81%99kpi%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88))
   - チームでKPI設定をする際に前提知識を身につけておきたいと思った。そろそろ本格的にビジネス側の能力高めていくぞ。
 
 
