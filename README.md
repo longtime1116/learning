@@ -43,6 +43,8 @@
 ### 10月
 - 日本人のための英語音声学レッスン([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#日本人のための英語音声学レッスン))
   - 英語の発音の本を買って以前大失敗したので、まともな本が欲しかった。音声学というまともな学問からアプローチすれば科学的に学べそうなので手を出すことにした。
+- パーフェクトRuby on Rails 増補改訂版([感想](https://github.com/longtime1116/learning/blob/master/book_review.md#パーフェクトRuby on Rails 増補改訂版))
+  - ずいぶん長いこと Rails を書いていないな、バージョンアップによる機能差分もキャッチアップできていないな、と思ったので読んだ。
 
 
 ## 2019年
