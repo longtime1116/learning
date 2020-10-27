@@ -10,7 +10,7 @@ title | author |  started at | finished at
 
 # 数学の基礎
 
-title | started at | finished at
+title | author | started at | finished at
 :--: | :--: | :--: | :--:
 [集合・位相入門](https://www.iwanami.co.jp/book/b265402.html) | 松坂和夫 | 2020-10-28 |
 [線形代数入門](https://www.iwanami.co.jp/book/b265431.html) | 松坂和夫 |  |
