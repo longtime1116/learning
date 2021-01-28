@@ -4,6 +4,12 @@
 - このページに書かないもの: 感想、メモ、ソースコード
 
 # 読了
+
+## 2021年
+### 1月
+- LeanとDevOpsの科学([感想とメモ](https://github.com/longtime1116/learning/tree/master/accelerate))
+  - 良本！テックリード的な側面から開発チームの生産性を上げる方法についてヒントが得たかったので読むことにした。
+
 ## 2020年
 ### 1月
 - 楽々ERDレッスン([感想](https://github.com/longtime1116/learning/tree/master/rakuraku_erd))
@@ -185,7 +191,6 @@
 - エリック・エヴァンスのドメイン駆動設計
 - エンジニアのための理論でわかるデザイン入門
 - ハッカーと画家( => その後Lispやりたい )
-- LeanとDevOpsの科学
 - Docker から入る Kubernetes コンテナ開発からK8s本番運用まで
 - ブリッツスケーリング
 
