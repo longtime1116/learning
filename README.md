@@ -5,6 +5,12 @@
 
 # 読了
 
+## 2022年
+### 1月
+- デザイン組織のつくりかた([感想とメモ](https://github.com/longtime1116/learning/tree/master/org_design_for_design_orgs))
+  - 今の会社でのデザイン組織を短中長期の目線で考えてアクションをとっていかなければならない状態。
+  - 目次を見たときに、組織構造についてまさに求めていることが書かれているように見えたので、読むことにした。
+
 ## 2021年
 ### 1月
 - LeanとDevOpsの科学([感想とメモ](https://github.com/longtime1116/learning/tree/master/accelerate))
