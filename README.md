@@ -5,6 +5,13 @@
 
 # 読了
 
+## 2023年
+### 5月
+- Effective Ruby(2回目)([ソースコード](https://github.com/longtime1116/effective_ruby2))
+  - 転職にあたって、今一度Rubyの言語仕様をおさえておきたかったので、当時良書だと思ったこの本を再び読むことにした。
+- プロを目指す人のためのRuby入門<改訂2版>([感想とソースコード](https://github.com/longtime1116/cherry_book))
+  - Effective Ruby だけだと、網羅性と時代性の二点に不安を感じたので、評判が良くかつRuby3.0以降にも対応している本を読むことにした。
+
 ## 2022年
 ### 5月
 - デザイン組織のつくりかた([感想とメモ](https://github.com/longtime1116/learning/tree/master/org_design_for_design_orgs))
