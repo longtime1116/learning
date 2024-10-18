@@ -7,7 +7,7 @@
 # 読了
 ## 2024 年
 ### 10 月
-- ネットワークはなぜ繋がるのか([感想](https://github.com/longtime1116/how_network_works))
+- ネットワークはなぜ繋がるのか([感想](https://github.com/longtime1116/learning/tree/master/how_network_works))
   - 転職後、船舶に載せるオンプレサーバー(ラズパイ)上で動くソフトウェアを開発するようになり、ネットワークに関する基礎知識を復習する必要が生じたので読むことにした。
 
 ## 2023 年
